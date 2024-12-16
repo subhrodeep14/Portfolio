@@ -13,11 +13,10 @@ function App() {
       <div className="font-sans">
 
         <Hero />
-        <About />
-        <Projects />
         <Skills />
+        <Projects />
+        
         <Contact />
-
         <Footer />
 
 
