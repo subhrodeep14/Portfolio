@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { icon} from '../icons/icon'
+import { icon } from '../icons/icon'
 import Button from './Button';
 
 function Navbar() {
@@ -17,20 +17,16 @@ function Navbar() {
             <li><Link href="/home" className="hover:underline hover:text-blue-500">Home</Link></li>
             <li><Link href="/skills" className="hover:underline hover:text-blue-500">Skills</Link></li>
             <li><Link href="/projects" className="hover:underline hover:text-blue-500">Projects</Link></li>
-           
+
             <li><Link href="/contact" className="hover:underline hover:text-blue-500">Contact</Link></li>
           </ul>
         </div>
-        <div className=' mr-10'>
-
-          <img className='h-12' src={icon.twitter} alt="" />
+        <div className=' mr-10 flex justify-center items-center gap-5'>
+          <img className='h-12 hover:cursor-pointer hover:h-14' src={icon.github} alt="" />
+          <img className='h-12 hover:cursor-pointer hover:h-14' src={icon.twitter} />
+          <img className='h-16 hover:cursor-pointer hover:h-18' src={icon.linkdin} alt="" />
         </div>
-   
-
-
-
       </div>
-     
     </div>
   );
 }
