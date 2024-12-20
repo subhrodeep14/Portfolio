@@ -13,7 +13,7 @@ function Projects() {
     ];
   
     return (
-      <section id="projects" className="py-16 bg-gray-100">
+      <section id="projects" className="py-16 min-h-screen bg-zinc-900 text-gray-300">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold">My Projects</h2>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">

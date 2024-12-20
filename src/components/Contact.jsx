@@ -1,9 +1,9 @@
 function Contact() {
     return (
-      <section id="contact" className="py-16">
-        <div className="container mx-auto text-center">
+      <section id="contact" className="py-16  bg-zinc-900 min-h-screen text-gray-300">
+        <div className="container mx-auto text-center border">
           <h2 className="text-3xl font-bold">Contact Me</h2>
-          <form className="mt-8 max-w-lg mx-auto">
+          <form className="mt-8 max-w-lg mx-auto border p-4">
             <input
               type="text"
               placeholder="Your Name"

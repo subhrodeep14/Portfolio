@@ -6,7 +6,7 @@ import Button from './Button';
 function Navbar() {
   return (
 
-    <div className="bg-zinc-900 p-4 text-white ">
+    <div className="bg-zinc-900 p-4 text-gray-300 ">
 
       <div className="container mx-auto flex items-center ">
         <div className=''>
