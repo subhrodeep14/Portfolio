@@ -14,7 +14,7 @@ import prisma from "./prisma.svg"
 import react from "./react 2.svg"
 import tailwind from "./tailwind.svg"
 import ts from "./ts.svg"
-import linkdin from "./linkdin.svg"
+import linkdin from "./linkedin.svg"
 
 export const icon={
     express,github,twitter,css,html,javascript,mongodb,mysql,nextjs,nodejs,postgresql,postman,prisma,react,tailwind,ts,linkdin
