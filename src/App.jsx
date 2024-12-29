@@ -5,20 +5,18 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <>
-      <div >
-
+    <div className='bg-zinc-900'>
+        <Navbar/>
         <Hero />
         <Skills />
         <Projects />
         <Contact />
         <Footer />
-
-
-      </div></>
+      </div>
 
   );
 }

@@ -3,8 +3,7 @@ import Navbar from "./Navbar";
 
 function Hero() {
   return (
-    <div className="min-h-screen bg-zinc-900 text-gray-300  ">
-      <Navbar />
+    <div className="h-screen bg-zinc-900 text-gray-300  ">
       <div className="flex justify-center items-center align-middle mt-40">
         <div>
           <h1 className="text-6xl font-bold">Hi, I'm <span className="text-blue-500 font-extrabold text-8xl">Subhrodeep</span> </h1>
