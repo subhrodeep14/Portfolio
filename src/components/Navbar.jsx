@@ -3,6 +3,10 @@ import { Link, NavLink, Route, Routes } from 'react-router-dom';
 import { icon } from '../icons/icon'
 import Hero from './Hero';
 import Skills from './Skills';
+const handleClick = (link) => {
+  window.location.href = link;
+
+};
 
 function Navbar() {
   return (
@@ -22,9 +26,9 @@ function Navbar() {
           </ul>
         </div>
         <div className=' mr-10 flex justify-center items-center gap-5 w-1/3'>
-          <img className='h-10 hover:cursor-pointer hover:h-14' src={icon.github} alt="" />
-          <img className='h-10 hover:cursor-pointer hover:h-14' src={icon.twitter} />
-          <img className='h-10 hover:cursor-pointer hover:h-14' src={icon.linkdin} alt="" />
+          <img className='h-10 hover:cursor-pointer hover:h-14' onClick={()=>handleClick('https://github.com/subhrodeep14')}  src={icon.github} alt="" />
+          <img className='h-10 hover:cursor-pointer hover:h-14' onClick={() => handleClick('https://twitter.com/subhrodeep14')} src={icon.twitter} />
+          <img className='h-10 hover:cursor-pointer hover:h-14' onClick={() => handleClick('https://www.linkedin.com/in/subhrodeep-acharya-ba2590266/')} src={icon.linkdin} alt="" />
         </div>
       </div>
     </div>
