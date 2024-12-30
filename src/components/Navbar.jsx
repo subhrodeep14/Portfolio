@@ -1,20 +1,21 @@
-import React from 'react';
-import { Link, NavLink, Route, Routes } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+
 import { icon } from '../icons/icon'
-import Hero from './Hero';
-import Skills from './Skills';
+
 const handleClick = (link) => {
+  
   window.location.href = link;
 
 };
+
 
 function Navbar() {
   return (
 
     <div className="bg-zinc-900  text-gray-300 flex justify-between items-center ">
 
-      <div className="container mx-auto flex items-center ">
-        <div className='w-1/3 flex justify-start'>
+      <div className="container mx-auto flex items-center  md:px-20 lg:px-32">
+        <div className='w-1/3 flex justify-start '>
           <h1 className='text-4xl ml-10 font-bold'>SUBHRO<span className='text-blue-500'>DEEP.</span></h1>
         </div>
         <div className=' w-full ml-40 flex justify-center items-center '>
@@ -28,7 +29,7 @@ function Navbar() {
         <div className=' mr-10 flex justify-center items-center gap-5 w-1/3'>
           <img className='h-10 hover:cursor-pointer hover:h-14' onClick={()=>handleClick('https://github.com/subhrodeep14')}  src={icon.github} alt="" />
           <img className='h-10 hover:cursor-pointer hover:h-14' onClick={() => handleClick('https://twitter.com/subhrodeep14')} src={icon.twitter} />
-          <img className='h-10 hover:cursor-pointer hover:h-14' onClick={() => handleClick('https://www.linkedin.com/in/subhrodeep-acharya-ba2590266/')} src={icon.linkdin} alt="" />
+          <img className='h-10 hover:cursor-pointer hover:h-14'  onClick={() => handleClick('https://www.linkedin.com/in/subhrodeep-acharya-ba2590266/')} src={icon.linkdin} alt="" />
         </div>
       </div>
     </div>

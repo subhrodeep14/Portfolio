@@ -1,4 +1,5 @@
 
+import { assets } from "../assets/assets";
 
 function Hero() {
   return (
@@ -9,7 +10,7 @@ function Hero() {
           <p className="text-lg mt-4 text-zinc-400">I develop open-source full-stack apps/tools and take on <span className="font-bold underline underline-offset-4"> freelance projects.</span><br />
           I’m a passionate<span className="font-bold underline underline-offset-4">  pre-final year undergrad</span> with a deep love for coding and technology. </p>
       
-          <a href='#contact' className="mt-6 inline-block bg-gray-200 text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-white">
+          <a href='#contact' className="mt-6 inline-block bg-gray-100 text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-300">
             Contact Me
           </a>
           <button class="px-10 py-3 ml-6 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
@@ -17,6 +18,9 @@ function Hero() {
           </button>
 
 
+        </div>
+        <div className="ml-20 w-1/6 rounded-full overflow-hidden object-contain shadow-lg shadow-blue-400">
+          <img src={assets.profile} alt="" />
         </div>
 
       </div>

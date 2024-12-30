@@ -1,6 +1,6 @@
 import React from 'react'
 
-
+import { icon } from '../icons/icon'
 
 
 const Cards = ({ techs, text, pageLink, gitLink, description, image }) => {
@@ -27,14 +27,15 @@ const Cards = ({ techs, text, pageLink, gitLink, description, image }) => {
 
         </div>
         <div className='flex justify-start items-start mt-3'>
-          <p className='inline-block'>{description}</p>
+          <p className='flex justify-start items-start al'>{description}</p>
         </div>
       </div>
       <div className='flex justify-center items-center font-medium'>
         <button>
           <a href={pageLink} target='_blank' className='bg-blue-400 hover:bg-blue-500 text-zinc-900 px-4 py-2 rounded-lg m-3'>Live Link</a>
         </button>
-        <button>
+        <button >
+          
           <a href={gitLink} target='_blank' className='bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg m-3'>Github</a>
         </button>
       </div>
