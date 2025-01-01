@@ -4,7 +4,7 @@ import { icon } from '../icons/icon'
 
 const handleClick = (link) => {
   
-  window.location.href = link;
+  window.open(link, '_blank');
 
 };
 
@@ -12,9 +12,9 @@ const handleClick = (link) => {
 function Navbar() {
   return (
 
-    <div className="bg-zinc-900  text-gray-300 flex justify-between items-center ">
+    <div className="bg-zinc-900  text-gray-300 flex justify-between items-center  h-20 shadow-md sticky top-0 z-50 ">
 
-      <div className="container mx-auto flex items-center  md:px-20 lg:px-32">
+      <div className="container mx-auto flex items-center "> 
         <div className='w-1/3 flex justify-start '>
           <h1 className='text-4xl ml-10 font-bold'>SUBHRO<span className='text-blue-500'>DEEP.</span></h1>
         </div>
