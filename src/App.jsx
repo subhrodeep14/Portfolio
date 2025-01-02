@@ -7,9 +7,12 @@ import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar';
 
+import { ToastContainer } from 'react-toastify';
+
 function App() {
   return (
     <div className='bg-zinc-900'>
+      <ToastContainer/>
         <Navbar/>
         <Hero />
         <Skills />
