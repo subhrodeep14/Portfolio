@@ -1,10 +1,16 @@
 
 import { assets } from "../assets/assets";
-
+import { motion } from "framer-motion";
 function Hero() {
   return (
-    <div className="h-screen bg-zinc-900 text-gray-300  ">
-      <div className="flex justify-center items-center align-middle mt-52">
+    <div className="h-screen  text-gray-300  ">
+      <motion.div 
+      initial={{x: -1000}}
+      animate={{x: 0}}
+      transition={{duration: 1}}
+      
+      
+      className="flex justify-center items-center align-middle mt-52">
         <div>
           <h1 className="text-6xl font-bold">Hi, I'm <span className="text-blue-500 font-extrabold text-8xl">Subhrodeep</span> </h1>
           <p className="text-lg mt-4 text-zinc-400">I develop open-source full-stack apps/tools and take on <span className="font-bold underline underline-offset-4"> freelance projects.</span><br />
@@ -23,7 +29,7 @@ function Hero() {
           <img src={assets.profile} alt="" />
         </div>
 
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -26,10 +26,10 @@ function Navbar() {
             <li><a href="#contact" className="hover:underline hover:text-blue-500">Contact</a></li>
           </ul>
         </div>
-        <div className=' mr-10 flex justify-center items-center gap-5 w-1/3'>
-          <img className='h-10 hover:cursor-pointer hover:h-14' onClick={()=>handleClick('https://github.com/subhrodeep14')}  src={icon.github} alt="" />
-          <img className='h-10 hover:cursor-pointer hover:h-14' onClick={() => handleClick('https://twitter.com/subhrodeep14')} src={icon.twitter} />
-          <img className='h-10 hover:cursor-pointer hover:h-14'  onClick={() => handleClick('https://www.linkedin.com/in/subhrodeep-acharya-ba2590266/')} src={icon.linkdin} alt="" />
+        <div className=' mr-10 ml-10 p-4  flex justify-between items-center gap-5 w-1/4'>
+          <img className='h-10 hover:cursor-pointer hover:h-12 ' onClick={()=>handleClick('https://github.com/subhrodeep14')}  src={icon.github} alt="" />
+          <img className='h-10 hover:cursor-pointer hover:h-12' onClick={() => handleClick('https://twitter.com/subhrodeep14')} src={icon.twitter} />
+          <img className='h-10 hover:cursor-pointer hover:h-12'  onClick={() => handleClick('https://www.linkedin.com/in/subhrodeep-acharya-ba2590266/')} src={icon.linkdin} alt="" />
         </div>
       </div>
     </div>
