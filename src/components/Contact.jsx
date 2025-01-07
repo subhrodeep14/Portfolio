@@ -1,6 +1,6 @@
 import React from 'react'
 import { toast } from 'react-toastify';
-
+import {motion} from 'framer-motion'
 
 
 function Contact() {
@@ -32,7 +32,13 @@ function Contact() {
   };
     return (
       <section id="contact" className="  bg-zinc-900 h-screen text-gray-300">
-        <div className="container mx-auto text-center py-16">
+        <motion.div
+        initial={{opacity:0,x: -200}}
+        whileInView={{opacity:1,x: 0}}
+        transition={{duration: 1.5}}
+        viewport={{once: true}}
+        
+        className="container mx-auto text-center py-16">
           <h2 className="text-5xl font-bold"><span className="text-blue-500 underline underline-offset-4 mr-1">Contact</span>Me </h2>
           <form onSubmit={onSubmit} className="mt-16 bg-zinc-800 text-black max-w-lg mx-auto border rounded-lg  p-6">
             <input
@@ -57,7 +63,7 @@ function Contact() {
               {result?result: "Send Message"}
             </button>
           </form>
-        </div>
+        </motion.div>
       </section>
     );
   }

@@ -12,7 +12,7 @@ const handleClick = (link) => {
 function Navbar() {
   return (
 
-    <div className="bg-zinc-900  text-gray-300 flex justify-between items-center  h-20 shadow-md sticky top-0 z-50 ">
+    <div className="bg-zinc-900  text-gray-300 flex justify-between items-center  h-20 shadow-md top-0 z-50 ">
 
       <div className="container mx-auto flex items-center "> 
         <div className='w-1/3 flex justify-start '>

@@ -5,9 +5,11 @@ function Hero() {
   return (
     <div className="h-screen  text-gray-300  ">
       <motion.div 
-      initial={{x: -1000}}
-      animate={{x: 0}}
-      transition={{duration: 1}}
+      initial={{opacity:0,y: -100}}
+      whileInView={{opacity:1,y: 0}}
+  
+      transition={{duration: 1.5}}
+      viewport={{once: true}}
       
       
       className="flex justify-center items-center align-middle mt-52">

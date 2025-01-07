@@ -1,6 +1,6 @@
 import Cards from "./CardForProject";
 import { assets } from "../assets/assets.js";
-
+import { motion } from "framer-motion";
 
 const project1 = ['React', 'tailwind css'];
 
