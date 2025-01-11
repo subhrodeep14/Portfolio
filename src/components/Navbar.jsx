@@ -42,7 +42,7 @@ function Navbar() {
           <img className='h-10 hover:cursor-pointer hover:h-12 ' onClick={()=>handleClick('https://github.com/subhrodeep14')}  src={icon.github} alt="" />
           <img className='h-10 hover:cursor-pointer hover:h-12' onClick={() => handleClick('https://twitter.com/subhrodeep14')} src={icon.twitter} />
           <img className='h-10 hover:cursor-pointer hover:h-12'  onClick={() => handleClick('https://www.linkedin.com/in/subhrodeep-acharya-ba2590266/')} src={icon.linkdin} alt="" />
-          <img onClick={()=>setShowMobileMenu(true)} src={icon.menu} className=' md:hidden w-7 ' alt="" />
+          <img onClick={()=>setShowMobileMenu(true)} src={icon.menu} className=' md:hidden w-7' alt="" />
         </div>
       </div>
 
@@ -52,9 +52,9 @@ function Navbar() {
           </div>
           <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
             <a onClick={()=>setShowMobileMenu(false)} href="#Header" className='px-4 py-2 rounded-full inline-block'>Home</a>
-            <a onClick={()=>setShowMobileMenu(false)} href="#About" className='px-4 py-2 rounded-full inline-block'>About</a>
+            <a onClick={()=>setShowMobileMenu(false)} href="#About" className='px-4 py-2 rounded-full inline-block'>Skills</a>
             <a onClick={()=>setShowMobileMenu(false)} href="#Project" className='px-4 py-2 rounded-full inline-block'>Project</a>
-            <a onClick={()=>setShowMobileMenu(false)} href="#Testimonials" className='px-4 py-2 rounded-full inline-block'>Testimonials</a>
+            <a onClick={()=>setShowMobileMenu(false)} href="#Testimonials" className='px-4 py-2 rounded-full inline-block'>Contact</a>
           </ul>
         
       </div>
