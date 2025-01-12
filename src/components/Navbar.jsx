@@ -24,42 +24,39 @@ function Navbar() {
   },[showMobileMenu])
   return (
 
-    <div className="bg-zinc-900  text-gray-300  shadow-md top-0 z-50 ">
 
-      <div className="container mx-auto flex items-center px-6 py-6 md:px-20 lg:px-32 "> 
-        <div className='w-1/3 flex justify-start '>
-          <h1 className='text-4xl ml-10 font-bold'>SUBHRO<span className='text-blue-500'>DEEP.</span></h1>
-        </div>
-        <div className=' w-full ml-40 flex justify-center items-center '>
-          <ul className="flex space-x-12  p-4 mr-44 border-2 rounded-xl mt-3  items-center font-medium text-xl ">
-            <li><a href="#hero" className="hover:underline hover:text-blue-500">Home</a></li>
-            <li><a href="#skills" className="hover:underline hover:text-blue-500">Skills</a></li>
-            <li><a href="#projects" className="hover:underline hover:text-blue-500">Projects</a></li>
-            <li><a href="#contact" className="hover:underline hover:text-blue-500">Contact</a></li>
-          </ul>
-        </div>
-        <div className=' mr-10 ml-10 p-4  flex justify-between items-center gap-5 w-1/4'>
-          <img className='h-10 hover:cursor-pointer hover:h-12 ' onClick={()=>handleClick('https://github.com/subhrodeep14')}  src={icon.github} alt="" />
-          <img className='h-10 hover:cursor-pointer hover:h-12' onClick={() => handleClick('https://twitter.com/subhrodeep14')} src={icon.twitter} />
-          <img className='h-10 hover:cursor-pointer hover:h-12'  onClick={() => handleClick('https://www.linkedin.com/in/subhrodeep-acharya-ba2590266/')} src={icon.linkdin} alt="" />
-          <img onClick={()=>setShowMobileMenu(true)} src={icon.menu} className=' md:hidden w-7' alt="" />
-        </div>
+    <div className="bg-zinc-900 text-gray-300 shadow-md top-0 z-50 w-full">
+    <div className="container mx-auto  flex items-center justify-between px-6 py-6 md:px-20 lg:px-32">
+      <div className="w-1/3 flex justify-start">
+        <h1 className="text-4xl ml-10 font-bold">SUBHRO<span className="text-blue-500">.</span></h1>
       </div>
+    <div className="w-2/3 flex justify-end md:hidden">
+    <button onClick={() => setShowMobileMenu(!showMobileMenu)} className="text-gray-300 focus:outline-none">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+  </div>
+  <div className={`w-full  md:flex md:items-center md:w-auto ${showMobileMenu ? 'block' : 'hidden'}`}>
+    <nav className="flex flex-col md:flex-row md:ml-auto md:mr-10">
+      <a href="#home" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-slate-700 hover:text-blue-400 transition-colors duration-300">Home</a>
+      <a href="#about" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-gray-700 hover:text-white transition-colors duration-300">About</a>
+      <a href="#services" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-gray-700 hover:text-white transition-colors duration-300">Services</a>
+      <a href="#contact" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-gray-700 hover:text-white transition-colors duration-300">Contact</a>
+    </nav>
+  </div>
+  <div className={`w-full   md:flex md:items-center md:w-auto ${showMobileMenu ? 'block' : 'hidden'}`}>
+    <nav className="flex justify-center items-center gap-4 md:flex-row md:ml-auto md:mr-10">
+          <img className='h-8  w-16 hover:cursor-pointer hover:h-10 transition-colors duration-300 rounded-full  ' onClick={()=>handleClick('https://github.com/subhrodeep14')}  src={icon.github} alt="" />
+          <img className='h-8  w-16 hover:cursor-pointer hover:h-10 ' onClick={() => handleClick('https://twitter.com/subhrodeep14')} src={icon.twitter} />
+          <img className='h-8 w-16 hover:cursor-pointer hover:h-10'  onClick={() => handleClick('https://www.linkedin.com/in/subhrodeep-acharya-ba2590266/')} src={icon.linkdin} alt="" />
+    </nav>
+          
+        </div>
+  </div>
+  </div>
+  
 
-      <div className={` md:hidden ${showMobileMenu ?'fixed w-full' :'h-0 w-0'}  right-0 top-0 bottom-0 overflow-hidden bg-white transition-all`}>
-          <div className='flex justify-end p-6 cursor-pointer'>
-            <img onClick={()=>setShowMobileMenu(false)} src={icon.menu} className='w-6' alt="" />
-          </div>
-          <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
-            <a onClick={()=>setShowMobileMenu(false)} href="#Header" className='px-4 py-2 rounded-full inline-block'>Home</a>
-            <a onClick={()=>setShowMobileMenu(false)} href="#About" className='px-4 py-2 rounded-full inline-block'>Skills</a>
-            <a onClick={()=>setShowMobileMenu(false)} href="#Project" className='px-4 py-2 rounded-full inline-block'>Project</a>
-            <a onClick={()=>setShowMobileMenu(false)} href="#Testimonials" className='px-4 py-2 rounded-full inline-block'>Contact</a>
-          </ul>
-        
-      </div>
-
-    </div>
   );
 }
 
