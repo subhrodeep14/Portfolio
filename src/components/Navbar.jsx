@@ -37,15 +37,15 @@ function Navbar() {
       </svg>
     </button>
   </div>
-  <div className={`w-full  md:flex md:items-center md:w-auto ${showMobileMenu ? 'block' : 'hidden'}`}>
-    <nav className="flex flex-col md:flex-row md:ml-auto md:mr-10">
+  <div className={`w-full px-5 md:flex md:items-center md:w-auto ${showMobileMenu ? 'block' : 'hidden'}`}>
+    <nav className="flex border font-medium text-xl rounded-xl p-2 mr-30  flex-col md:flex-row md:ml-auto md:mr-20">
       <a href="#home" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-slate-700 hover:text-blue-400 transition-colors duration-300">Home</a>
-      <a href="#about" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-gray-700 hover:text-white transition-colors duration-300">About</a>
-      <a href="#services" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-gray-700 hover:text-white transition-colors duration-300">Services</a>
-      <a href="#contact" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-gray-700 hover:text-white transition-colors duration-300">Contact</a>
+      <a href="#about" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-slate-700 hover:text-blue-400 transition-colors duration-300">Skills</a>
+      <a href="#services" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-slate-700 hover:text-blue-400 transition-colors duration-300">Project</a>
+      <a href="#contact" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-slate-700 hover:text-blue-400 transition-colors duration-300">Contact</a>
     </nav>
   </div>
-  <div className={`w-full   md:flex md:items-center md:w-auto ${showMobileMenu ? 'block' : 'hidden'}`}>
+  <div className={`w-full ml-14  md:flex md:items-center md:w-auto ${showMobileMenu ? 'block' : 'hidden'}`}>
     <nav className="flex justify-center items-center gap-4 md:flex-row md:ml-auto md:mr-10">
           <img className='h-8  w-16 hover:cursor-pointer hover:h-10 transition-colors duration-300 rounded-full  ' onClick={()=>handleClick('https://github.com/subhrodeep14')}  src={icon.github} alt="" />
           <img className='h-8  w-16 hover:cursor-pointer hover:h-10 ' onClick={() => handleClick('https://twitter.com/subhrodeep14')} src={icon.twitter} />
