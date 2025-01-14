@@ -12,7 +12,7 @@ function Hero() {
       viewport={{once: true}}
       
       
-      className="flex justify-center items-center md:inline-block align-middle mt-20 md:mt-32 lg:mt-52 px-4 md:px-0">
+      className="flex justify-center items-center align-middle mt-20 md:mt-32 lg:mt-52 px-4 md:px-0">
         <div>
           <h1 className="text-4xl md:text-6xl font-bold">Hi, I'm <span className="text-blue-500 font-extrabold text-5xl md:text-8xl">Subhrodeep</span> </h1>
           <p className="text-base md:text-lg mt-4 text-zinc-400">I develop open-source full-stack apps/tools and take on <span className="font-bold underline underline-offset-4"> freelance projects.</span><br />

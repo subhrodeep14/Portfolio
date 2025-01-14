@@ -38,7 +38,7 @@ function Navbar() {
     </button>
   </div>
   <div className={`w-full px-5 md:flex md:items-center md:w-auto ${showMobileMenu ? 'block' : 'hidden'}`}>
-    <nav className="flex border font-medium text-xl rounded-xl p-2 mr-30  flex-col md:flex-row md:ml-auto md:mr-20">
+    <nav className="flex border-2 font-medium text-xl rounded-xl p-2 mr-30  flex-col md:flex-row md:ml-auto md:mr-20">
       <a href="#home" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-slate-700 hover:text-blue-400 transition-colors duration-300">Home</a>
       <a href="#about" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-slate-700 hover:text-blue-400 transition-colors duration-300">Skills</a>
       <a href="#services" className="p-2 lg:px-4 md:mx-2 text-blue-500 rounded hover:bg-slate-700 hover:text-blue-400 transition-colors duration-300">Project</a>
