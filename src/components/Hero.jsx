@@ -10,7 +10,7 @@ function Hero() {
   
       transition={{duration: 1.5}}
       viewport={{once: true}}
-      
+       
       
       className="flex justify-center items-center align-middle mt-20 md:mt-32 lg:mt-52 px-4 md:px-0">
         <div>

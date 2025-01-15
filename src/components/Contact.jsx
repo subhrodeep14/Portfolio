@@ -31,7 +31,7 @@ function Contact() {
     }
   };
     return (
-      <section id="contact" className="  bg-zinc-900 h-screen text-gray-300">
+      <div id="contact" className="  bg-zinc-900 h-screen text-gray-300">
         <motion.div
         initial={{opacity:0,x: -200}}
         whileInView={{opacity:1,x: 0}}
@@ -64,7 +64,7 @@ function Contact() {
             </button>
           </form>
         </motion.div>
-      </section>
+      </div>
     );
   }
   
